@@ -38,10 +38,6 @@ const App = () => {
 								<Sliders className="align-middle" />
 								<span className="align-middle">Dashboard</span>
 							</Link>
-							<Link className="sidebar-link" to="/users">
-								<Users className="align-middle" />
-								<span className="align-middle">Users</span>
-							</Link>
 						</li>
 					</ul>
 				</div>
@@ -185,74 +181,12 @@ const App = () => {
 									<div className="card-header">
 										<h5 className="card-title mb-0">Empty card</h5>
 									</div>
-									<div className="card-body">
-										<button
-											className="btn btn-primary"
-											type="button"
-											data-bs-toggle="modal"
-											data-bs-target="#exampleModal"
-											onClick={() => {
-												setModalBody('Hello')
-											}}
-										>
-											Hello
-										</button>
-										<button
-											className="btn btn-primary"
-											type="button"
-											data-bs-toggle="modal"
-											data-bs-target="#exampleModal"
-											onClick={() => {
-												setModalBody('Hi')
-											}}
-										>
-											Hi
-										</button>
-									</div>
+									<div className="card-body"></div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</main>
-			</div>
-
-			{/* MODAL */}
-			<div
-				className="modal fade"
-				id="exampleModal"
-				aria-labelledby="exampleModalLabel"
-				aria-hidden="true"
-			>
-				<div className="modal-dialog">
-					<div className="modal-content">
-						<div className="modal-header">
-							<h5 className="modal-title" id="exampleModalLabel">
-								Modal title
-							</h5>
-							<button
-								type="button"
-								className="btn-close"
-								data-bs-dismiss="modal"
-								aria-label="Close"
-							></button>
-						</div>
-						<div className="modal-body">
-							<h3>{modalBody}</h3>
-						</div>
-						<div className="modal-footer">
-							<button
-								type="button"
-								className="btn btn-secondary"
-								data-bs-dismiss="modal"
-							>
-								Close
-							</button>
-							<button type="button" className="btn btn-primary">
-								Save changes
-							</button>
-						</div>
-					</div>
-				</div>
 			</div>
 		</div>
 	)
